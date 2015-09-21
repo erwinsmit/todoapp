@@ -1,0 +1,10 @@
+<h1>Items</h1>
+{% for item in items %}
+    <li>{{ item.description }}</li>
+{% endfor %}
+
+<form method="post" action="addItem">
+    <label for="todoText"></label>
+    <input id="todoText" name="todoText" type="text" />
+    <button type="submit">Submit</button>
+</form>
